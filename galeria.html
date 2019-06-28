@@ -6,6 +6,7 @@
     <script src="html5lightbox/html5lightbox.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/jquery.mixitup.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -14,12 +15,12 @@
       $(function(){
         $("#portafolio").mixitup({
           targetSelector:".items",
-          transitionSpeed: 300
+          transitionSpeed: 200
         });
       });
     </script>
   </head>
-  <body>
+  <body class="bg-dark">
     <div class="container-fluid">
         <div id="cabecera" class="row" style="background: rgba(35,130,219,1);
 background: -moz-linear-gradient(-45deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 7%, rgba(15,84,158,1) 19%, rgba(0,47,97,1) 49%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
@@ -167,35 +168,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2382db', end
       </div>
     </div>
     <!-- Fin registro -->
+<!--Inicio Galeria -->
+    <div class="container">
+      <div class="jumbotron">
+        <section id="contenedor">
+            <ul id="listado">
+              <li class="filtro" data-filter="all">Todas</li>
+              <li class="filtro" data-filter="servicios">Servicios</li>
+              <li class="filtro" data-filter="jovenes">Jóvenes</li>
+              <li class="filtro" data-filter="escuelaDominical">Escuela Dominical</li>
+              <li class="filtro" data-filter="actividades">Actividades</li>
+              </ul>
+            <ul id="portafolio">
+              <li class="items actividades"><a href="img/galeria/actividades10G.png" class="hmtl5html5lightbox" data-group="galeria" title="Preparción Bautizos"><img src="assets/youtube.png" alt=""></a></li>
+              <li class="items servicios"><a href="img/galeria/iglesia36G.png" class="hmtl5html5lightbox" data-group="galeria" title="Servicios"><img src="img/galeria/iglesia36.png" alt=""></a></li>
+              <li class="items escuelaDominical"><a href="img/galeria/escuelaDominical5G.png" class="hmtl5html5lightbox" data-group="galeria" title="Escuela Dominical"><img src="img/galeria/escuelaDominical5.png" alt=""></a></li>
+              <li class="items actividades"><a href="img/galeria/actividades4G.png" class="hmtl5html5lightbox" data-group="galeria" title="Preparción Bautizos"><img src="img/galeria/actividades4.png" alt=""></a></li>
+              <li class="items servicios"><a href="img/galeria/iglesia34G.png" class="hmtl5html5lightbox" data-group="galeria" title="Servicios"><img src="img/galeria/iglesia34.png" alt=""></a></li>
+              </ul>
+        </section>
+      </div>
+    </div>
+<!--Fin de galeria -->
 
-    <section id="contenedor">
-        <ul id="listado">
-          <li class="filtro" data-filter="all">Todas</li>
-          <li class="filtro" data-filter="servicios">Servicios</li>
-          <li class="filtro" data-filter="jovenes">Jóvenes</li>
-          <li class="filtro" data-filter="escuelaDominical">Escuela Dominical</li>
-          <li class="filtro" data-filter="actividades">Actividades</li>
-          </ul>
-        <ul id="portafolio">
-          <li class="items actividades"><a href="img/galeria/actividades10G.png" class="hmtl5html5lightbox" data-group="galeria" title="Preparción Bautizos"><img src="img/galeria/actividades10.png" alt=""></a></li>
-          <li class="items servicios"><a href="img/galeria/iglesia36G.png" class="hmtl5html5lightbox" data-group="galeria" title="Servicios"><img src="img/galeria/iglesia36.png" alt=""></a></li>
-          <li class="items escuelaDominical"><a href="img/galeria/escuelaDominical5G.png" class="hmtl5html5lightbox" data-group="galeria" title="Escuela Dominical"><img src="img/galeria/escuelaDominical5.png" alt=""></a></li>
-          <li class="items actividades"><a href="img/galeria/actividades4G.png" class="hmtl5html5lightbox" data-group="galeria" title="Preparción Bautizos"><img src="img/galeria/actividades4.png" alt=""></a></li>
-          <li class="items actividades"><a href="img/galeria/actividades5G.png" class="hmtl5html5lightbox" data-group="galeria" title="Preparción Bautizos"><img src="img/galeria/actividades5.png" alt=""></a></li>
-          <li class="items servicios"><a href="img/galeria/iglesia35G.png" class="hmtl5html5lightbox" data-group="galeria" title="Preparción Bautizos"><img src="img/galeria/iglesia35.png" alt=""></a></li>
-          <li class="items servicios"><a href="img/galeria/iglesia34G.png" class="hmtl5html5lightbox" data-group="galeria" title="Servicios"><img src="img/galeria/iglesia34.png" alt=""></a></li>
-          </ul>
-    </section>
-
-<br />
-<br />
-
-
-    <footer class="container">
-      <p class="float-right"><a href="#">Regresar al inicio</a></p>
-      <p> 2018 MGD &middot; Ministerio Gracias a Dios &middot; </p>
-    </footer>
-  </div>
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

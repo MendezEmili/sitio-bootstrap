@@ -59,3 +59,124 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0cf28', end
     padding: 0;
     width: 60%;
   }
+
+/* Css galeria*/
+
+  #contenedor{
+    width: 100%;
+    max-width: 1024px;
+    margin: 200px 50px;
+    font-family: cursive;
+  }
+
+  #listado{
+    display: block;
+    width: 80%;
+    height: 15%;
+    margin: 16px auto;
+  }
+
+  #listado li{
+    text-align: center;
+    display: block;
+    list-style: none;
+    cursor: pointer;
+    width: 15%;
+    height: 50px;
+    margin: 15px 5px;
+    line-height: 50px;
+    float: left;
+  }
+
+  #listado li:hover {
+    background-color: rgba(6, 46, 124, 0.92);
+    border-radius: 5px;
+    color: white;
+  }
+
+  #listado li.active{
+    background-color: rgba(6, 2, 36, 1);
+    color: white;
+    border-radius: 5px;
+  }
+
+  /*LIsta de imagenes*/
+  #portafolio img{
+    width: 100%;
+    max-width: 1024px;
+    text-align: center;
+  }
+
+  .items{
+    display:none;
+    opacity: 0;
+    width: 30%;
+    margin: 5px;
+  }
+
+
+  .items img{
+    width: 100%;
+  }
+
+  @media screen and (min-width: 960px){
+    #contenedor{
+      width: 100%;
+      margin: auto;
+    }
+    #listado{
+      display: block;
+      width: 950px;
+      height: 56px;
+      margin: 16px auto;
+    }
+
+  }
+
+
+  @media screen and (min-width: 480px) and (max-width:960px){
+    #contenedor{
+      width: 100%;
+      margin: auto;
+    }
+    #listado{
+      display: block;
+      width: 500px;
+      height: 56px;
+      margin: 16px auto;
+    }
+
+    .items{
+      width: 45%;
+    }
+  }
+
+
+
+  @media screen and (min-width: 180px) and (max-width:480px){
+    #contenedor{
+      width: 95%;
+      margin: auto;
+    }
+    #listado{
+      display: block;
+      width: 350px;
+      height: 56px;
+      margin: 16px auto;
+    }
+    #listado li{
+      text-align: center;
+      display: block;
+      list-style: none;
+      cursor: pointer;
+      width: 140px;
+      height: 50px;
+      margin: 15px 5px;
+      line-height: 50px;
+      float: left;
+    }
+
+    .items{
+      width: 90%;
+    }
+  }
