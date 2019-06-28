@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#cabecera{
+  box-shadow: 0px 2px 4px 4px rgb(0, 0, 0);
+}
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0px; /* Establecemos la barra en la izquierda */
+	top: 310px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+  margin-left: 0;
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 5px 8px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-instagram {background: rgba(240,207,40,1);
+background: -moz-linear-gradient(45deg, rgba(240,207,40,1) 0%, rgba(240,207,40,1) 4%, rgba(222,124,20,1) 34%, rgba(194,25,146,1) 65%, rgba(158,11,109,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(240,207,40,1)), color-stop(4%, rgba(240,207,40,1)), color-stop(34%, rgba(222,124,20,1)), color-stop(65%, rgba(194,25,146,1)), color-stop(100%, rgba(158,11,109,1)));
+background: -webkit-linear-gradient(45deg, rgba(240,207,40,1) 0%, rgba(240,207,40,1) 4%, rgba(222,124,20,1) 34%, rgba(194,25,146,1) 65%, rgba(158,11,109,1) 100%);
+background: -o-linear-gradient(45deg, rgba(240,207,40,1) 0%, rgba(240,207,40,1) 4%, rgba(222,124,20,1) 34%, rgba(194,25,146,1) 65%, rgba(158,11,109,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(240,207,40,1) 0%, rgba(240,207,40,1) 4%, rgba(222,124,20,1) 34%, rgba(194,25,146,1) 65%, rgba(158,11,109,1) 100%);
+background: linear-gradient(45deg, rgba(240,207,40,1) 0%, rgba(240,207,40,1) 4%, rgba(222,124,20,1) 34%, rgba(194,25,146,1) 65%, rgba(158,11,109,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0cf28', endColorstr='#9e0b6d', GradientType=1 );;}
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-youtube {background: #cf0a13;}
+	.social ul li .icon-mail {background: #000000;}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+
+  #ministerios img{
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px 0px #000;
+  }
+
+  #titulosMinisterios{
+    color: rgb(224, 248, 250);
+    background: rgba(0, 0, 0, 0.82);
+    padding: 0;
+    width: 60%;
+  }
