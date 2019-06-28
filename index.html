@@ -8,21 +8,30 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css"/>
+    <script type="text/javascript">
+      $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+      })
+    </script>
     <title>Hello, world!</title>
 
   </head>
   <body class="bg-dark">
     <div class="container-fluid">
         <div id="cabecera" class="row" style="background: rgba(35,130,219,1);
-background: -moz-linear-gradient(-45deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 2%, rgba(10,75,145,1) 6%, rgba(2,45,89,1) 20%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(35,130,219,1)), color-stop(2%, rgba(12,108,199,1)), color-stop(6%, rgba(10,75,145,1)), color-stop(20%, rgba(2,45,89,1)), color-stop(99%, rgba(2,18,36,1)), color-stop(100%, rgba(2,18,36,1)));
-background: -webkit-linear-gradient(-45deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 2%, rgba(10,75,145,1) 6%, rgba(2,45,89,1) 20%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 2%, rgba(10,75,145,1) 6%, rgba(2,45,89,1) 20%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 2%, rgba(10,75,145,1) 6%, rgba(2,45,89,1) 20%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
-background: linear-gradient(135deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 2%, rgba(10,75,145,1) 6%, rgba(2,45,89,1) 20%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
+background: -moz-linear-gradient(-45deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 7%, rgba(15,84,158,1) 19%, rgba(0,47,97,1) 49%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(35,130,219,1)), color-stop(7%, rgba(12,108,199,1)), color-stop(19%, rgba(15,84,158,1)), color-stop(49%, rgba(0,47,97,1)), color-stop(99%, rgba(2,18,36,1)), color-stop(100%, rgba(2,18,36,1)));
+background: -webkit-linear-gradient(-45deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 7%, rgba(15,84,158,1) 19%, rgba(0,47,97,1) 49%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 7%, rgba(15,84,158,1) 19%, rgba(0,47,97,1) 49%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 7%, rgba(15,84,158,1) 19%, rgba(0,47,97,1) 49%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
+background: linear-gradient(135deg, rgba(35,130,219,1) 0%, rgba(12,108,199,1) 7%, rgba(15,84,158,1) 19%, rgba(0,47,97,1) 49%, rgba(2,18,36,1) 99%, rgba(2,18,36,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2382db', endColorstr='#021224', GradientType=1 );height:200px;">
-          <div class="col offset-2">
+          <div class="col offset-2 mt-2">
+            <img src="assets/logo1.png"/>
+          </div>
+          <div class="col mt-3">
             <h2 style="color: white;">Ministerio Gracias a Dios</h2>
+            <h5 style="color: white;">Una Iglesia con sentido común</h5>
           </div>
         </div>
         <div class="row bg-light" style="height:6px;">
@@ -58,7 +67,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2382db', end
                     <a class="nav-link" href="#">Ventana6</a>
                   </li>
                   <li class="nav-item ml-4 pl-4">
-                    <a class="nav-link" href="#">Iniciar Sesión</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalSesion">Iniciar Sesión</a>
                   </li>
                 </ul>
 
@@ -69,15 +78,99 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2382db', end
         <!-- Side bar para redes sociales -->
       <div class="social">
         <ul>
-          <li><a href="http://www.facebook.com/falconmasters" target="_blank" class="icon-facebook"><img src="assets/facebook.png" /></a></li>
-          <li><a href="http://www.twitter.com/falconmasters" target="_blank" class="icon-twitter"><img src="assets/instagram.png" /></a></li>
-          <li><a href="http://www.googleplus.com/falconmasters" target="_blank" class="icon-googleplus"><img src="assets/twitter.png" /></a></li>
-          <li><a href="http://www.pinterest.com/falconmasters" target="_blank" class="icon-pinterest"><img src="assets/youtube.png" /></a></li>
-          <li><a href="mailto:contacto@falconmasters.com" class="icon-mail"><img src="assets/mail2.png" /></a></li>
+          <li><a href="https://www.facebook.com/Ministerio-Gracias-a-Dios-957158531141918" target="_blank" class="icon-facebook"><img src="assets/facebook.png" /></a></li>
+          <li><a href="https://www.instagram.com/explore/locations/957158531141918/ministerio-gracias-a-dios" target="_blank" class="icon-instagram"><img src="assets/instagram.png" /></a></li>
+          <li><a href="https://twitter.com/MGDGuatemala" target="_blank" class="icon-twitter"><img src="assets/twitter.png" /></a></li>
+          <li><a href="https://www.youtube.com/channel/UCfP3Tz1YgseTiJS6Ne-2P6w" target="_blank" class="icon-youtube"><img src="assets/youtube.png" /></a></li>
+          <li><a href="mailto:pastor@mgdguatemala.com" class="icon-mail"><img src="assets/mail2.png" /></a></li>
         </ul>
       </div>
         <!-- Fin side bar de redes sociales -->
     </div>
+    <!--Inicio modal para iniciar sesion -->
+    <div class="modal fade" id="modalSesion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Iniciar Sesión</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa correo">
+                <small id="emailHelp" class="form-text text-muted">no compartiremos tu dirección de correo</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+              </div>
+              <div class="form-group">
+                <label>No tienes sesión, registrate</label>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modalRegistro">Resitrarse</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Iniciar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin modal pra iniciar sesion -->
+
+    <!--Registro de usuario -->
+    <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Registrar Usuario</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nombre completo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa correo">
+                <small id="emailHelp" class="form-text text-muted">no compartiremos tu dirección de correo</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa correo">
+                <small id="emailHelp" class="form-text text-muted">no compartiremos tu dirección de correo</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa correo">
+                <small id="emailHelp" class="form-text text-muted">no compartiremos tu dirección de correo</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin registro -->
 
     <!--Incio cuadro de informacion -->
     <div class="container mt-4 mb-4">
@@ -85,33 +178,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2382db', end
         <h2>Te damos la bienvenida</h2>
       </div>
     </div>
-    <div class="container bg-light mt-4">
-      <div class="row" style="height:100px;">
-        <div class="col" style="border: rgb(94, 138, 236) 1px solid;">
-          Componente # 1
+    <div class="container bg-dark mt-4 mb-4">
+      <div class="row bg-light">
+        <div class="col-12 col-md-6 col-lg-4 col-sm-12" style="border: rgb(94, 138, 236) 1px solid;">
+          <img src="assets/iconoOracion.png" />
         </div>
-        <div class="col" style="border: rgb(94, 138, 236) 1px solid;">
+        <div class="col-12 col-md-6 col-lg-4 col-sm-12" style="border: rgb(94, 138, 236) 1px solid;">
           Componente # 2
         </div>
-        <div class="col" style="border: rgb(94, 138, 236) 1px solid;">
+        <div class="col-12 col-md-6 col-lg-4 col-sm-12" style="border: rgb(94, 138, 236) 1px solid;">
           Componente # 3
         </div>
-      </div>
-      <div class="row" style="height:100px;">
-        <div class="col" style="border: rgb(94, 138, 236) 1px solid;">
-          Componente # 4
+        <div class="col-12 col-md-6 col-lg-4 col-sm-12" style="border: rgb(94, 138, 236) 1px solid;">
+          <img src="assets/servicios.png" />
         </div>
-        <div class="col" style="border: rgb(94, 138, 236) 1px solid;">
+        <div class="col-12 col-md-6 col-lg-4 col-sm-12" style="border: rgb(94, 138, 236) 1px solid;">
           Componente # 5
         </div>
-        <div class="col" style="border: rgb(94, 138, 236) 1px solid;">
+        <div class="col-12 col-md-6 col-lg-4 col-sm-12" style="border: rgb(94, 138, 236) 1px solid;">
           Componente # 6
         </div>
       </div>
     </div>
     <!-- Fin cuadro de informacion -->
-
-
 
 <!-- Inicio de Footer-->
     <footer class="footer mt-4" style="background: rgb(8, 21, 65);">
