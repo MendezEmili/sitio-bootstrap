@@ -33,8 +33,8 @@
             <img src="assets/logoNinos.png"/>
           </div>
           <div class="col mt-3">
-            <h2 style="color: white;">Ministerio Gracias a Dios</h2>
-            <h5 style="color: white;">Una Iglesia con sentido común</h5>
+            <h2 class="h2"style="color: white;">Ministerio Gracias a Dios</h2>
+            <h5 class="h5" style="color: white;">Una Iglesia con sentido común</h5>
           </div>
         </div>
         <div class="row bg-light" style="height:6px;">
@@ -49,25 +49,25 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item ml-4 pl-4">
-                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link h5" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item ml-4 pl-4">
-                    <a class="nav-link" href="#">Ventana1</a>
+                    <a class="nav-link h5" href="#">Ventana1</a>
                   </li>
                   <li class="nav-item ml-4 pl-4">
-                    <a class="nav-link" href="#">Ventana2</a>
+                    <a class="nav-link h5" href="#">Ventana2</a>
                   </li>
                   <li class="nav-item ml-4 pl-4">
-                    <a class="nav-link" href="#">Ventana3</a>
+                    <a class="nav-link h5" href="#">Ventana3</a>
                   </li>
                   <li class="nav-item ml-4 pl-4">
-                    <a class="nav-link" href="galeria.html">Galería</a>
+                    <a class="nav-link h5" href="galeria.html">Galería</a>
                   </li>
                   <li class="nav-item ml-4 pl-4">
-                    <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                    <a class="nav-link h5" href="ubicacion.html">Ubicación</a>
                   </li>
                   <li class="nav-item ml-4 pl-4">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalSesion">Iniciar Sesión</a>
+                    <a class="nav-link h5" href="#" data-toggle="modal" data-target="#modalSesion">Iniciar Sesión</a>
                   </li>
                 </ul>
 
@@ -184,8 +184,27 @@
       </div>
     </div>
     <!-- Fin registro -->
+  <div class="container-fluid">
+    <div class="row">
+<!--     <div class="col-3">
+        <!--<div id="particles-js">
 
-    <div id="particles-js"></div>
+        </div>
+      </div>-->
+
+        <div id="particles-js">
+            <div class="carousel-caption d-block mt-5">
+              <div class="row">
+                <div class="col" style="background: rgba(216, 245, 247, 0.43);">
+                  <h2 class="h2 mt-4">Ministerio Infantil Gracias a Dios</h2>
+                  <hr />
+
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
 
     <!-- scripts -->
     <script src="../particles.js"></script>
@@ -193,25 +212,6 @@
 
     <!-- stats.js -->
     <script src="js/lib/stats.js"></script>
-    <script>
-      var count_particles, stats, update;
-      stats = new Stats;
-      stats.setMode(0);
-      stats.domElement.style.position = 'absolute';
-      stats.domElement.style.left = '0px';
-      stats.domElement.style.top = '0px';
-      document.body.appendChild(stats.domElement);
-      count_particles = document.querySelector('.js-count-particles');
-      update = function() {
-        stats.begin();
-        stats.end();
-        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-        }
-        requestAnimationFrame(update);
-      };
-      requestAnimationFrame(update);
-    </script>
 
 
     <!-- Optional JavaScript -->
